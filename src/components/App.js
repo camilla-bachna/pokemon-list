@@ -5,9 +5,9 @@ import PokeList from './PokeList';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <PokeList pokemon={pokemon} />
-      </div>
+      </>
     );
   }
 }

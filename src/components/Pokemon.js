@@ -1,20 +1,20 @@
 import React from 'react';
 
 const Pokemon = (props) => {
-  console.log(props.pokemonEach.id);
+  //console.log(props.pokemonEach.id);
 
   const pokemonType = props.pokemonEach.types.map((pokemonType, index) => {
     return (
-      <li key={index} className="type">
+      <li key={index} className="list__types--type">
         {pokemonType}
       </li>
     );
   });
   return (
     <>
-      <img src={props.pokemonEach.url} alt="pokemon" className="img" />
-      <h2 className="title">{props.pokemonEach.name}</h2>
-      <ul className="types">{pokemonType}</ul>
+      <img src={props.pokemonEach.url} alt="pokemon" className="list__img" />
+      <h2 className="list__title">{props.pokemonEach.name}</h2>
+      <ul className="list__types">{pokemonType}</ul>
     </>
   );
 };
